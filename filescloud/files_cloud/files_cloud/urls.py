@@ -15,12 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-# from apps.files_download.views import files_download
-# from apps.files_load.views import files_load
 from apps.files_load import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload/',views.files_upload),
-    path('download/',views.files_download)
+    path('download/',views.files_download),
 ]

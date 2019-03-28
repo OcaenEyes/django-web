@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>上传</title>
+    <style type="text/css"></style>
 </head>
+
 <body>
-<input  type="file" name="upload">
-<b style="font-size: x-large;color: blue">上传</b>
+
+
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <span class="td2-1">上传文件</span><input type="file" name="myfile" class="td2-2"><br>
+        <input type="submit" value="上传">
+
+    </form>
+
+
 </body>
+
 </html>
