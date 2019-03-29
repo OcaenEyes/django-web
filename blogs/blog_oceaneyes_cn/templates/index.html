@@ -7,6 +7,14 @@
     <title>博客主页</title>
 </head>
 <body>
-    <div style="width: 200px;height: 400px;background-color: aquamarine">
+
+<div class="article" style="background-color: #5897fb;border-radius: 14px;width: 240px;padding: 30px">
+    {% for arc in articles %}
+    <H3>文章标题：{{arc.title}}</H3>
+    <p>文章内容：{{arc.content}}</p>
+    <p>文章标签：{{arc.tag}}</p>
+    <p>文章分类：{{arc.category}}</p>
+    {% endfor %}
+</div>
 </body>
 </html>
