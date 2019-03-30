@@ -34,3 +34,9 @@ class Reward(models.Model):
     title = models.CharField(default='',max_length=20,verbose_name="求赞语言")
     qrcode = models.ImageField(upload_to='qrcode',verbose_name="二维码",null=True)
 
+class Image(models.Model):
+    id = models.IntegerField(primary_key=True)
+    text = models.CharField(default='',max_length=10,verbose_name="图片描述")
+    image = models.ImageField(upload_to='images',verbose_name="素材图片")
+
+

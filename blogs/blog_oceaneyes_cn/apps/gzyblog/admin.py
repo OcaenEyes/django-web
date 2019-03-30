@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Tag,Category,Article,UserAccount,Reward
+from .models import Tag,Category,Article,UserAccount,Reward,Image
 # Register your models here.
 
 
@@ -20,6 +20,8 @@ class UserManage(admin.ModelAdmin):
 class RewardManage(admin.ModelAdmin):
     list_display = ('id','title','qrcode')
 
+class ImageManage(admin.ModelAdmin):
+    list_display = ('id','text','image')
 
 admin.site.site_header = '乔克叔叔杂货店管理后台'
 admin.site.site_title = '乔克叔叔杂货店'
@@ -28,4 +30,4 @@ admin.site.register(Category,CategoryManage)
 admin.site.register(Article,ArticleManage)
 admin.site.register(UserAccount,UserManage)
 admin.site.register(Reward,RewardManage)
-
+admin.site.register(Image,ImageManage)
