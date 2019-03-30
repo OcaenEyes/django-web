@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>博客主页</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load staticfiles %}
 
-<div class="article" style="background-color: #5897fb;border-radius: 14px;width: 240px;padding: 30px">
-    {% for arc in articles %}
-    <H3>文章标题：{{arc.title}}</H3>
-    <p>文章内容：{{arc.content}}</p>
-    <p>文章标签：{{arc.tag}}</p>
-    <p>文章分类：{{arc.category}}</p>
-    {% endfor %}
-</div>
-</body>
-</html>
+
+{% block content %}
+    {% include 'content.html' %}
+{% endblock %}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}乔克叔叔杂货店{% endblock %}</title>
+</head>
+<body style="width: 100%;margin: 0px;">
+    {% include 'header.html' %}
+    {% include 'nav.html' %}
+    {% block content %}
+    {% endblock %}
+    {% include 'footer.html' %}
+</body>
+</html>

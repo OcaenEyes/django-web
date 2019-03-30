@@ -1,0 +1,25 @@
+<style type="text/css">
+
+.left-bar{
+	width: 20%;
+	margin-left: 6%;
+	float: left;
+    margin-top: 44px;
+}
+
+.left-bar img {
+	width: 140px;
+	height: 140px;
+
+}
+</style>
+<div class="left-bar">
+    <div class="reward">
+        {% for reward in rewards %}
+        <p>
+            {{reward.title}}
+        </p>
+        <img src="{{MEDIA_URL}}{{reward.qrcode}}">
+        {% endfor %}
+    </div>
+</div>

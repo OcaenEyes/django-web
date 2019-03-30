@@ -1,0 +1,44 @@
+<style type="text/css">
+    #nav {
+        height: 88px;
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: normal;
+        margin-bottom: 20px;
+        border-top: 0.5px dotted #bbbbbb;
+        border-bottom: 4px outset #bbbbbb;
+        width: 80%;
+        margin-left: 10%;
+
+    }
+    #nav ul {
+        list-style: none;
+        line-height: 40px;
+        margin-left: 76px;
+
+    }
+    #nav li {
+        display: block;
+        float: left;
+        margin-left: 36px;
+    }
+    #nav a{
+        display: block;
+        padding: 0 20px;
+        background-color: #333333;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    #nav a:hover {
+        background-color: #609ab6;
+        color: #ffffff;
+    }
+</style>
+
+<div id="nav">
+    <ul>
+        {% for category in categories %}
+        <li><a href="">{{category.category}}</a></li>
+        {% endfor %}
+    </ul>
+</div>
