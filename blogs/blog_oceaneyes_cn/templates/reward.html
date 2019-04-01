@@ -4,7 +4,10 @@
 	width: 20%;
 	margin-left: 6%;
 	float: left;
-    margin-top: 44px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #333333;
 }
 
 .left-bar img {
@@ -14,6 +17,10 @@
 }
 </style>
 <div class="left-bar">
+    <div>
+        
+        <a href="/cate">tiaozhuan</a>
+    </div>
     <div class="reward">
         {% for reward in rewards %}
         <p>

@@ -25,7 +25,7 @@ SECRET_KEY = 'l3ri!we(4_^bzkvs%hb$4m0$*6^ly_2r^$b#!ez648$-llk%ao'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -80,22 +80,24 @@ DATABASES = {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     # }
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'django_web_blogs',
-    #     'USER':'root',
-    #     'PASSWORD':'',
-    #     'HOST':'127.0.0.1',
-    #     'PORT':'3306',
-    # }
+
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django_web_blogs',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '10.211.55.5',
-        'PORT': '3306',
+        'USER':'root',
+        'PASSWORD':'123456',
+        'HOST':'127.0.0.1',
+        'PORT':'3306',
     }
+
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'django_web_blogs',
+    #     'USER': 'root',
+    #     'PASSWORD': '',
+    #     'HOST': '10.211.55.5',
+    #     'PORT': '3306',
+    # }
 }
 
 

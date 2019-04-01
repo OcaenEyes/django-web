@@ -1,0 +1,190 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Mar 18 18:01:05 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 08 December 2018 14:58:38
+os: Linux-3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017
+nodename: centos-linux.shared
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/www/django-web/blogs/blog_oceaneyes_cn
+detected binary path: /home/Data/work/py_vm/venv1/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/www/django_web/blogs/blog_oceaneyes_cn
+chdir(): No such file or directory [core/uwsgi.c line 2631]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Mar 18 18:02:09 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 08 December 2018 14:58:38
+os: Linux-3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017
+nodename: centos-linux.shared
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/www/django-web/blogs/blog_oceaneyes_cn
+detected binary path: /home/Data/work/py_vm/venv1/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/www/django_web/blogs/blog_oceaneyes_cn
+chdir(): No such file or directory [core/uwsgi.c line 2631]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Mar 18 18:39:44 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 08 December 2018 14:58:38
+os: Linux-3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017
+nodename: centos-linux.shared
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/www/django-web/blogs/blog_oceaneyes_cn
+detected binary path: /home/Data/work/py_vm/venv1/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/www/django-web/blogs/blog_oceaneyes_cn
+your processes number limit is 7257
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 (default, Dec  7 2018, 22:29:31)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+Set PythonHome to /home/Data/work/py_vm/venv1
+Python main interpreter initialized at 0x24140e0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1039520 bytes (1015 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x24140e0 pid: 15737 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 15737)
+spawned uWSGI worker 1 (pid: 15742, cores: 4)
+spawned uWSGI worker 2 (pid: 15743, cores: 4)
+spawned uWSGI worker 3 (pid: 15748, cores: 4)
+spawned uWSGI worker 4 (pid: 15750, cores: 4)
+[pid: 15750|app: 0|req: 1/1] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 06:39:51 2019] GET / => generated 4640 bytes in 78 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 15743|app: 0|req: 1/2] 10.211.55.2 () {42 vars in 842 bytes} [Tue Mar 19 06:39:51 2019] GET /media/qrcode/alipay.jpg => generated 155292 bytes in 53 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 0)
+[pid: 15748|app: 0|req: 2/3] 10.211.55.2 () {42 vars in 848 bytes} [Tue Mar 19 06:39:51 2019] GET /media/qrcode/wechatpay.jpg => generated 170642 bytes in 68 msecs via sendfile() (HTTP/1.1 200) 4 headers in 144 bytes (0 switches on core 0)
+[pid: 15748|app: 0|req: 2/4] 10.211.55.2 () {42 vars in 902 bytes} [Tue Mar 19 06:39:51 2019] GET /media/qrcode/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg => generated 23385 bytes in 55 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 1)
+[pid: 15748|app: 0|req: 3/5] 10.211.55.2 () {42 vars in 840 bytes} [Tue Mar 19 06:39:51 2019] GET /media/images/worth.jpg => generated 5378 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 142 bytes (0 switches on core 3)
+[pid: 15742|app: 0|req: 3/6] 10.211.55.2 () {42 vars in 856 bytes} [Tue Mar 19 06:39:51 2019] GET /media/qrcode/WechatIMG751.jpeg => generated 51643 bytes in 130 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 1)
+[pid: 15742|app: 0|req: 3/7] 10.211.55.2 () {42 vars in 856 bytes} [Tue Mar 19 06:39:51 2019] GET /media/images/worth_2mBWjU5.jpg => generated 5378 bytes in 135 msecs via sendfile() (HTTP/1.1 200) 4 headers in 142 bytes (0 switches on core 2)
+[pid: 15742|app: 0|req: 3/8] 10.211.55.2 () {42 vars in 834 bytes} [Tue Mar 19 06:39:51 2019] GET /media/images/bg.png => generated 187338 bytes in 159 msecs via sendfile() (HTTP/1.1 200) 4 headers in 143 bytes (0 switches on core 0)
+[pid: 15743|app: 0|req: 2/9] 10.211.55.2 () {42 vars in 852 bytes} [Tue Mar 19 06:45:33 2019] GET /admin => generated 0 bytes in 2 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 1)
+[pid: 15748|app: 0|req: 4/10] 10.211.55.2 () {42 vars in 854 bytes} [Tue Mar 19 06:45:33 2019] GET /admin/ => generated 8953 bytes in 96 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 3)
+Not Found: /static/admin/css/dashboard.css
+[pid: 15750|app: 0|req: 2/11] 10.211.55.2 () {42 vars in 841 bytes} [Tue Mar 19 06:45:33 2019] GET /static/admin/css/dashboard.css => generated 2263 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 3)
+Not Found: /static/admin/css/base.css
+[pid: 15750|app: 0|req: 3/12] 10.211.55.2 () {42 vars in 831 bytes} [Tue Mar 19 06:45:33 2019] GET /static/admin/css/base.css => generated 2248 bytes in 15 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/css/responsive.css
+[pid: 15742|app: 0|req: 4/13] 10.211.55.2 () {42 vars in 843 bytes} [Tue Mar 19 06:45:33 2019] GET /static/admin/css/responsive.css => generated 2266 bytes in 19 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 3)
+[pid: 15750|app: 0|req: 4/14] 10.211.55.2 () {44 vars in 885 bytes} [Tue Mar 19 06:50:01 2019] GET /admin/ => generated 8953 bytes in 56 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 2)
+[pid: 15742|app: 0|req: 5/15] 10.211.55.2 () {44 vars in 885 bytes} [Tue Mar 19 06:50:02 2019] GET /admin/ => generated 8953 bytes in 83 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 2)
+[pid: 15748|app: 0|req: 5/16] 10.211.55.2 () {42 vars in 842 bytes} [Tue Mar 19 06:50:12 2019] GET / => generated 4640 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 15750|app: 0|req: 5/17] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 06:50:48 2019] GET / => generated 4640 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 15748|app: 0|req: 6/18] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 06:53:35 2019] GET / => generated 4640 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 15742|app: 0|req: 6/19] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 06:53:36 2019] GET / => generated 4640 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 15743|app: 0|req: 3/20] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 06:54:16 2019] GET / => generated 4640 bytes in 63 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 2)
+[pid: 15748|app: 0|req: 7/21] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 06:54:43 2019] GET / => generated 4640 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 2)
+[pid: 15748|app: 0|req: 8/22] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 06:54:44 2019] GET / => generated 4640 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 3)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Mar 18 18:55:13 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-36) on 08 December 2018 14:58:38
+os: Linux-3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017
+nodename: centos-linux.shared
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /home/www/django-web/blogs/blog_oceaneyes_cn
+detected binary path: /home/Data/work/py_vm/venv1/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/www/django-web/blogs/blog_oceaneyes_cn
+your processes number limit is 7257
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.1 (default, Dec  7 2018, 22:29:31)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-36)]
+Set PythonHome to /home/Data/work/py_vm/venv1
+Python main interpreter initialized at 0x1eeb0e0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1039520 bytes (1015 KB) for 16 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1eeb0e0 pid: 16586 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16586)
+spawned uWSGI worker 1 (pid: 16587, cores: 4)
+spawned uWSGI worker 2 (pid: 16588, cores: 4)
+spawned uWSGI worker 3 (pid: 16592, cores: 4)
+spawned uWSGI worker 4 (pid: 16593, cores: 4)
+[pid: 16588|app: 0|req: 1/1] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 06:55:16 2019] GET / => generated 4640 bytes in 73 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 16593|app: 0|req: 1/2] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 06:55:17 2019] GET / => generated 4640 bytes in 68 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 16588|app: 0|req: 2/3] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 06:56:11 2019] GET / => generated 4640 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 16592|app: 0|req: 1/4] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 06:56:12 2019] GET / => generated 4640 bytes in 68 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 16593|app: 0|req: 2/5] 10.211.55.2 () {44 vars in 885 bytes} [Tue Mar 19 06:58:11 2019] GET /admin/ => generated 8953 bytes in 54 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+[pid: 16592|app: 0|req: 2/6] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 06:58:13 2019] GET / => generated 4640 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 3)
+[pid: 16587|app: 0|req: 1/7] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 06:58:14 2019] GET / => generated 4640 bytes in 102 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 16592|app: 0|req: 3/8] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 07:16:47 2019] GET / => generated 4640 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 2)
+[pid: 16592|app: 0|req: 4/9] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 07:21:04 2019] GET / => generated 4640 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 16587|app: 0|req: 2/10] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 07:21:06 2019] GET / => generated 4640 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 16592|app: 0|req: 5/11] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 07:21:06 2019] GET / => generated 4640 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 16587|app: 0|req: 3/12] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 07:21:06 2019] GET / => generated 4640 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 2)
+[pid: 16588|app: 0|req: 3/13] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 07:21:07 2019] GET / => generated 4640 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 3)
+[pid: 16593|app: 0|req: 3/14] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 07:21:07 2019] GET / => generated 4640 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 2)
+[pid: 16592|app: 0|req: 6/15] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 07:21:07 2019] GET / => generated 4640 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 3)
+[pid: 16593|app: 0|req: 4/16] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 07:22:32 2019] GET / => generated 4640 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 3)
+[pid: 16593|app: 0|req: 5/17] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 07:22:32 2019] GET / => generated 4640 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 16593|app: 0|req: 6/18] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 07:23:25 2019] GET / => generated 4640 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 2)
+[pid: 16592|app: 0|req: 7/19] 10.211.55.2 () {44 vars in 866 bytes} [Tue Mar 19 07:24:28 2019] GET / => generated 4640 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 2)
+[pid: 16593|app: 0|req: 7/20] 10.211.55.2 () {42 vars in 854 bytes} [Tue Mar 19 07:24:32 2019] GET /admin/ => generated 8953 bytes in 91 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+Not Found: /static/admin/css/dashboard.css
+[pid: 16587|app: 0|req: 4/21] 10.211.55.2 () {42 vars in 841 bytes} [Tue Mar 19 07:24:32 2019] GET /static/admin/css/dashboard.css => generated 2263 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 3)
+Not Found: /static/admin/css/base.css
+[pid: 16593|app: 0|req: 8/22] 10.211.55.2 () {42 vars in 831 bytes} [Tue Mar 19 07:24:32 2019] GET /static/admin/css/base.css => generated 2248 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 3)
+Not Found: /static/admin/css/responsive.css
+[pid: 16593|app: 0|req: 9/23] 10.211.55.2 () {42 vars in 843 bytes} [Tue Mar 19 07:24:32 2019] GET /static/admin/css/responsive.css => generated 2266 bytes in 27 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/css/dashboard.css
+[pid: 16593|app: 0|req: 10/24] 10.211.55.2 () {42 vars in 841 bytes} [Tue Mar 19 07:24:36 2019] GET /static/admin/css/dashboard.css => generated 2263 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 2)
+Not Found: /static/admin/css/base.css
+[pid: 16588|app: 0|req: 4/25] 10.211.55.2 () {42 vars in 831 bytes} [Tue Mar 19 07:24:36 2019] GET /static/admin/css/base.css => generated 2248 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 2)
+Not Found: /static/admin/css/responsive.css
+[pid: 16593|app: 0|req: 11/26] 10.211.55.2 () {42 vars in 843 bytes} [Tue Mar 19 07:24:36 2019] GET /static/admin/css/responsive.css => generated 2266 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 2)
+[pid: 16592|app: 0|req: 8/27] 10.211.55.2 () {44 vars in 885 bytes} [Tue Mar 19 07:24:44 2019] GET /admin/ => generated 8953 bytes in 74 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 16587|app: 0|req: 5/28] 10.211.55.2 () {42 vars in 831 bytes} [Tue Mar 19 07:24:45 2019] GET /static/admin/css/base.css => generated 2248 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 3)
+Not Found: /static/admin/css/dashboard.css
+[pid: 16587|app: 0|req: 6/29] 10.211.55.2 () {42 vars in 841 bytes} [Tue Mar 19 07:24:45 2019] GET /static/admin/css/dashboard.css => generated 2263 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 3)
+Not Found: /static/admin/css/responsive.css
+[pid: 16588|app: 0|req: 5/30] 10.211.55.2 () {42 vars in 843 bytes} [Tue Mar 19 07:24:45 2019] GET /static/admin/css/responsive.css => generated 2266 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16593|app: 0|req: 12/31] 10.211.55.2 () {44 vars in 885 bytes} [Tue Mar 19 07:25:30 2019] GET /admin/ => generated 8953 bytes in 40 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+[pid: 16593|app: 0|req: 13/32] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 07:25:45 2019] GET / => generated 4640 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 16588|app: 0|req: 6/33] 10.211.55.2 () {44 vars in 873 bytes} [Tue Mar 19 07:26:11 2019] GET / => generated 4640 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 16592|app: 0|req: 9/34] 10.211.55.2 () {44 vars in 885 bytes} [Tue Mar 19 07:28:07 2019] GET /admin/ => generated 8953 bytes in 41 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 3)
+[pid: 16593|app: 0|req: 14/35] 10.211.55.2 () {44 vars in 885 bytes} [Tue Mar 19 07:28:59 2019] GET /admin/ => generated 8953 bytes in 30 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 2)
+[pid: 16592|app: 0|req: 10/36] 10.211.55.2 () {44 vars in 911 bytes} [Tue Mar 19 07:29:05 2019] GET /admin/gzyblog/ => generated 4679 bytes in 35 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 2)
+[pid: 16593|app: 0|req: 15/37] 10.211.55.2 () {44 vars in 903 bytes} [Tue Mar 19 07:29:07 2019] GET /admin/ => generated 8953 bytes in 27 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+[pid: 16587|app: 0|req: 7/38] 10.211.55.2 () {44 vars in 915 bytes} [Tue Mar 19 07:29:15 2019] GET /admin/auth/user/ => generated 6668 bytes in 81 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 1)
+[pid: 16592|app: 0|req: 11/39] 10.211.55.2 () {42 vars in 802 bytes} [Tue Mar 19 07:29:16 2019] GET /admin/jsi18n/ => generated 7684 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 16592|app: 0|req: 12/40] 10.211.55.2 () {44 vars in 943 bytes} [Tue Mar 19 07:29:17 2019] GET /admin/auth/user/1/change/ => generated 15805 bytes in 102 msecs (HTTP/1.1 200) 7 headers in 396 bytes (1 switches on core 1)
+[pid: 16587|app: 0|req: 8/41] 10.211.55.2 () {42 vars in 811 bytes} [Tue Mar 19 07:29:17 2019] GET /admin/jsi18n/ => generated 7684 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 16587|app: 0|req: 9/42] 10.211.55.2 () {52 vars in 1133 bytes} [Tue Mar 19 07:29:43 2019] POST /admin/auth/user/1/change/ => generated 0 bytes in 41 msecs (HTTP/1.1 302) 8 headers in 503 bytes (1 switches on core 3)
+[pid: 16593|app: 0|req: 16/43] 10.211.55.2 () {46 vars in 1167 bytes} [Tue Mar 19 07:29:43 2019] GET /admin/auth/user/ => generated 6815 bytes in 40 msecs (HTTP/1.1 200) 8 headers in 479 bytes (1 switches on core 3)
+[pid: 16593|app: 0|req: 17/44] 10.211.55.2 () {42 vars in 802 bytes} [Tue Mar 19 07:29:43 2019] GET /admin/jsi18n/ => generated 7684 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 2)
+[pid: 16593|app: 0|req: 18/45] 10.211.55.2 () {44 vars in 915 bytes} [Tue Mar 19 07:29:55 2019] GET /admin/auth/ => generated 2899 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 16592|app: 0|req: 13/46] 10.211.55.2 () {44 vars in 900 bytes} [Tue Mar 19 07:29:57 2019] GET /admin/ => generated 8950 bytes in 35 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 3)
+[pid: 16588|app: 0|req: 7/47] 10.211.55.2 () {44 vars in 911 bytes} [Tue Mar 19 07:30:00 2019] GET /admin/gzyblog/ => generated 4676 bytes in 47 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 3)
+[pid: 16588|app: 0|req: 8/48] 10.211.55.2 () {44 vars in 903 bytes} [Tue Mar 19 07:30:03 2019] GET /admin/ => generated 8950 bytes in 35 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 2)

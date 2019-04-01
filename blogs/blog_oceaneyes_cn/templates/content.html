@@ -2,10 +2,15 @@
 	.article-list{
 		width: 66%;
 		margin-left: 30%;
-		margin-top: 80px;
+		margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 1px solid #333333;
+
 	}
     .article-preview {
-        margin-top: 20px;
+        /*margin-top: 20px;*/
         margin-bottom: 20px;
     }
 
@@ -34,7 +39,24 @@
 </style>
 {% include 'reward.html' %}
 <div class="article-list">
-    {% for arc in articles %}
+    <!--{% for arc in articles %}-->
+    <!--<div class="article-preview">-->
+        <!--<H3 class="title">{{arc.title}}</H3>-->
+        <!--<span>文章标签：{{arc.tag}}</span>-->
+        <!--<span>文章分类：{{arc.category}}</span>-->
+        <!--<span>作者：{{arc.author}}</span>-->
+        <!--<span>最近编辑时间：{{arc.update_time}}</span>-->
+        <!--<div class="article-abstract">-->
+            <!--<p >{{arc.abstract}}</p>-->
+            <!--<img src="{{MEDIA_URL}}{{arc.image}}">-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+    <!--{% endfor %}-->
+
+    {% for arc in article_list %}
+
     <div class="article-preview">
         <H3 class="title">{{arc.title}}</H3>
         <span>文章标签：{{arc.tag}}</span>
@@ -47,6 +69,45 @@
         </div>
 
     </div>
+    {% endfor %}
+
+
+</div>
+
+<ul>
+    {% if article_list.has_previous %}
+        <li>
+            <a href="/hello/?page={{article_list.previous_page_number}}">上一页</a>
+        </li>
+    {% else %}
+        <li>
+            <a href="#">上一页</a>
+        </li>
+    {% endif %}
+
+    {% for num in paginator.page_range %}
+        {% if num == currentPage %}
+            <li>
+                <a href="/hello/?page={{num}}">{{num}}</a>
+            </li>
+        {% else %}
+            <li>
+                <a href="/hello/?page={{num}}">{{num}}</a>
+            </li>
+        {% endif %}
 
     {% endfor %}
-</div>
+
+
+    {% if article_list.has_next %}
+        <li>
+            <a href="/hello/?page={{article_list.next_page_number}}">下一页</a>
+        </li>
+
+    {% else %}
+        <li>
+            <a href="#">下一页</a>
+        </li>
+    {% endif%}
+
+</ul>
