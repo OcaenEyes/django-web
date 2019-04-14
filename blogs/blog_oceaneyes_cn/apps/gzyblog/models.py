@@ -4,17 +4,29 @@ import django.utils.timezone as timezone
 
 
 class Tag(models.Model):
+    class Meta:
+        verbose_name = "标签"
+        verbose_name_plural = "标签"
+
     id = models.IntegerField(primary_key=True)
     tag = models.CharField(max_length=32,verbose_name="标签管理")
 
 class Category(models.Model):
+    class Meta:
+        verbose_name = "归档"
+        verbose_name_plural = "归档"
+
     id = models.IntegerField(primary_key=True)
     category = models.CharField(max_length=32,verbose_name="分类管理")
 
 class Article(models.Model):
+    class Meta:
+        verbose_name="文章"
+        verbose_name_plural = "文章"
+
     id = models.IntegerField(primary_key=True)
     title = models.CharField(default='',max_length=20,verbose_name="文章标题")
-    tag = models.CharField(max_length=32, verbose_name="标签管理", default='')
+    tag = models.CharField(max_length=32, verbose_name="标签管理", default='',)
     category = models.CharField(default='', max_length=32, verbose_name="分类管理")
     author = models.CharField(default='', verbose_name="作者", max_length=10)
     image = models.ImageField(upload_to='images',verbose_name="封面图片",null=True)
@@ -39,4 +51,15 @@ class Image(models.Model):
     text = models.CharField(default='',max_length=10,verbose_name="图片描述")
     image = models.ImageField(upload_to='images',verbose_name="素材图片")
 
+
+
+class Meizitu(models.Model):
+    date = models.CharField(max_length=100, blank=True, null=True)
+    title = models.CharField(max_length=250, blank=True, null=True)
+    nextpage = models.CharField(db_column='nextPage', max_length=250, blank=True, null=True)  # Field name made lowercase.
+    previewimg = models.CharField(db_column='previewImg', max_length=250, blank=True, null=True)  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'MeiZiTu'
 

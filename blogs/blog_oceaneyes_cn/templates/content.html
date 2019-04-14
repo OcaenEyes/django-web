@@ -37,8 +37,13 @@
     }
 
 </style>
-{% include 'reward.html' %}
-<div class="article-list">
+<div>
+    <div class="" style="float: left;width: 29%">
+            {% include 'reward.html' %}
+    </div>
+
+    <div class="" style="float:right;width: 69%;">
+            <div class="article-list">
     <!--{% for arc in articles %}-->
     <!--<div class="article-preview">-->
         <!--<H3 class="title">{{arc.title}}</H3>-->
@@ -74,7 +79,7 @@
 
 </div>
 
-<ul>
+        <ul>
     {% if article_list.has_previous %}
         <li>
             <a href="/hello/?page={{article_list.previous_page_number}}">上一页</a>
@@ -111,3 +116,8 @@
     {% endif%}
 
 </ul>
+
+    </div>
+
+
+</div>

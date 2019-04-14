@@ -2,9 +2,7 @@
 from .serializer import YouoneSerializer
 from .models import Youone,StandardResultSetPagination
 from rest_framework.views import APIView
-from rest_framework import viewsets
-from rest_framework.response import Response
-from rest_framework.generics import GenericAPIView
+
 # Create your views here.
 
 class PageView(APIView):

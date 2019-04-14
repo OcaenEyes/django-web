@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'apps.one_api',
+    'apps.meizi',
 ]
 
 MIDDLEWARE = [

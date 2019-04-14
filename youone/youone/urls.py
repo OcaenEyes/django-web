@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from apps.one_api import views
+from apps.meizi import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/one/',views.PageView.as_view()),
+    path('one/',views.PageView.as_view()),
+    path('meizi/',views.PageView.as_view()),
 ]
